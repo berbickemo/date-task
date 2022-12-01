@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input
+        title="Accepted values are from 1 to 31"
+        placeholder="dd"
+        onchange="limitDD(this)"
+      />
+      <span>/</span>
+      <input
+        title="Accepted values are from 1 to 12"
+        type="number"
+        placeholder="mm"
+        onchange="limitMM(this)"
+      />
+      <span>/</span>
+      <input
+        title="Accepted values are from 1920 to 2022"
+        type="number"
+        placeholder="yyyy"
+        onchange="limitYY(this)"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
